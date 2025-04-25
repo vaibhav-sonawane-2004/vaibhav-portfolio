@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="vaibhav.css" />
+
+</head>
+<body>
+    <h1> Welcome to My Portfolio </h1>
+
+    <!-- Page 1: Profile -->
+    <div class="page">
+        <div class="profile-container">
+            <div class="left">
+                <h2>Vaibhav sunil sonawane</h2>
+                <p>About Me: <br> Hi! myself vaibhav sonawane, a first-year B.Tech degree student at MIT Academy of Engineering, Pune. I am skilled in both technical and non technical skills.</p>
+            </div>
+            <div class="right">
+                <img src= "D:\Tushar Portfolio\vaibhav.jpg" alt="Profile Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Tabs -->
+    <div class="page">
+        <div class="tabs">
+            <div class="tab" onclick="showContent('education')">Education</div>
+            <div class="tab" onclick="showContent('career')">Career</div>
+            <div class="tab" onclick="showContent('goals')">Goals</div>
+            <div class="tab" onclick="showContent('skills')">Skills</div>
+            <div class="tab" onclick="showContent('projects')">Projects</div>
+            <div class="tab" onclick="showContent('accomplishments')">Accomplishments</div>
+            <div class="tab" onclick="showContent('testimonial')">Testimonial</div>
+        </div>
+        <div class="tab-content" id="education">I completed my schooling from Kendriya Vidyalaya, then my 11th and 12th from Mahatma Gandhi Vidyalaya, and currently, I am pursuing a B.Tech degree at MIT Academy of Engineering.</div>
+        <div class="tab-content" id="career">Aspiring software developer with a strong passion for coding, problem-solving, and building efficient software solutions. Eager to learn and apply modern technologies to develop innovative applications. Looking for opportunities to enhance my skills and contribute to impactful projects in the field of software development.</div>
+        <div class="tab-content" id="goals">1. Build Strong Programming Skills – Master languages like Python, Java, JavaScript, or C++.<br>2. Develop Real-World Projects – Work on personal or open-source projects to build a strong portfolio.<br>3. Secure a Full-Time Job – Get a position as a software developer at a reputable company.<br>4. Expand Your Network – Connect with industry professionals and attend tech meetups.<br>5. Develop Leadership Skills – Transition into a senior role or team lead position.</div>
+        <div class="tab-content" id="skills">1. HTML<br>2. CSS<br>3. Python<br>4. C and C++</div>
+        <div class="tab-content" id="projects"># webpage designing.<br>
+            # webpage styling.<br>
+            # Library management system.<br>
+            # student record.<br>
+            # calculator.<br>
+            # restaurant billing system etc.
+        </div>
+        <div class="tab-content" id="accomplishments">Successfully wrote and executed programs in C, C++, Python, and HTML.<br># Created a simple static web page using HTML and styled it with CSS.<br># Used loops, functions, and file handling in all four languages.<br># Implemented basic data structures (arrays, linked lists, stacks, queues) in C and C++.<br># Built a basic command-line utility (e.g., a calculator or text-based game).</div>
+        <div class="tab-content" id="testimonial">"VAIBHAV SONAWANE has consistently demonstrated a strong passion for software development, excelling in C, C++, Python, and HTML. Their problem-solving ability and logical thinking make them a good programmer."</div>
+    </div>
+
+    <!-- Page 3: Certificates -->
+    <div class="page">
+        <div class="certificates">
+            <h2>Certificates</h2>
+            <p>Space for uploading certificate PDFs (this can be enhanced with file upload functionality if needed).</p>
+            <p>&#10148; python essentials 1 course by cisco networking Academy.</p>
+            <a href="D:\Tushar Portfolio\VAIBHAV python certificate 1.pdf (3).pdf" class="btn">View certificate 🎓</a>
+                <P>&#10148; python essentials 2 course by cisco networking Academy.</P>
+                <a href="D:\Tushar Portfolio\VAIBHAV python certificate 2.pdf" class="btn">View certificate 🎓</a></div>
+    </div>
+
+    <!-- Page 4: Contact -->
+    <div class="page">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p><img src="phone.png" alt="Phone"> Contact No: 762052xxxx</p>
+            <p><img src="whatsapp-brands.svg" alt="WhatsApp"> WhatsApp: 762052xxxx </p>
+            <p><img src="gmail.png" alt="Email"> Email: <a href="mailto:vaibhavsonawne982004@gmail.com"></a>vaibhavsonawne982004@gmail.com</p>
+            
+            <p><img src="linkedin.png" alt="LinkedIn"> LinkedIn: <a href="#">vaibhav sonawne</a></p>
+        </div>
+    </div>
+
+    <!-- Page 5: Query Form -->
+    <div class="page">
+        <div class="form-container">
+            <h2>If you have any queries, feel free to contact me!</h2>
+            <form id="queryForm" onsubmit="submitForm(event)">
+                <label for="query">Query:</label>
+                <textarea id="query" rows="5" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="response-message">Your response has been submitted!</div>
+        </div>
+    </div>
+
+    <script src="vaibhav.js"></script>
+</body>
+</html>
